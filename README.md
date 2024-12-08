@@ -1,4 +1,4 @@
-# 💰 Budget Tracker
+# 💰 Expense Tracker
 
 A web-based budget tracker designed to help users track their income and expenses. this app is used to manage your finances in a simple and user-friendly way.
 
