@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>Budget Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Expense Tracker</h1>
+            <h3>Save money when you can!💲</h3>
+        </header>
+        <main>
+            <section class="summary">
+                <div class="card">
+                    <h2>Balance</h2>
+                    <p id="balance">$0</p>
+                </div>
+                <div class="card">
+                    <h2>Income</h2>
+                    <p id="total-income">$0</p>
+                </div>
+                <div class="card">
+                    <h2>Expenses</h2>
+                    <p id="total-expenses">$0</p>
+                </div>
+            </section>
+            <section class="transaction-form">
+                <h2>Add Transaction</h2>
+                <form id="expense-form">
+                    <input type="text" id="description" placeholder="Description" required>
+                    <input type="number" id="amount" placeholder="Amount" required>
+                    <select id="type" required>
+                        <option value="income">Income</option>
+                        <option value="expense">Expense</option>
+                    </select>
+                    <button type="submit"><i class='bx bx-plus-circle'></i> Add Transaction</button>
+                </form>
+            </section>
+            <section class="transactions">
+                <h2>Recent Transactions</h2>
+                <ul id="transaction-list"></ul>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
